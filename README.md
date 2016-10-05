@@ -32,8 +32,9 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	
+	// Just print it
 	log.Println(response.Data.Inside) // true or false
-
 }
 ```
 
