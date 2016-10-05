@@ -5,7 +5,21 @@ Download with ```go get github.com/fencerio/gofencer```
 
 Consult the package and/or the API docs to establish which arguments are required. https://fencer.io/developers
 
-Typical set up would be something like this.
+## Tests
+
+Without an API key there is only 18% test coverage. Tests can provide 80% coverage with an API key 
+obtained from the Fencer.io service. Simply set it as an environment variable prior to calling ```go test```
+
+```
+export API_KEY='f7c04eaf-5510-5878-xxxxx-acad3c60f'
+go test -cover
+PASS
+coverage: 80.7% of statements
+ok      github.com/fencerio/gofencer    0.491s
+```
+
+## Use
+An example of typical setup and use is included below.
 
 ```
 package main 
