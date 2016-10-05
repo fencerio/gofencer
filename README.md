@@ -21,7 +21,7 @@ func main() {
 	lat := 53.6750352651078
 	lng := -2.4879334942895883
 
-	f := new (gofencer.API)
+	f := new(gofencer.API)
 	f.SetAPIKey(apiKey)
 	f.SetAccessKey(accessKey)
 	f.SetLatLng(lat, lng)
@@ -32,7 +32,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	
+
 	// Just print it
 	log.Println(response.Data.Inside) // true or false
 }
