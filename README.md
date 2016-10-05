@@ -1,7 +1,7 @@
 # Gofencer
 ## Go library for accessing the Fencer.io API
 
-Download with ```go get github.com/fencer.io/gofencer```
+Download with ```go get github.com/fencerio/gofencer```
 
 Consult the package and/or the API docs to establish which arguments are required. https://fencer.io/developers
 
@@ -12,7 +12,7 @@ package main
 
 import (
 	"log"
-	"github.com/fencer.io/gofencer"
+	"github.com/fencerio/gofencer"
 )
 
 func main() {
