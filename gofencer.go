@@ -38,19 +38,19 @@ type data struct {
 	Origin course `json:"origin,omitempty"`
 }
 
-// PositionResponse is the result struct contained unmarshaled JSON
+// PositionResponse is a result struct containing unmarshaled JSON
 type PositionResponse struct {
 	Data  data   `json:"data"`
 	Error string `json:"error"`
 }
 
-// NavigateResponse is the result struct contained unmarshaled JSON
+// NavigateResponse is a result struct containing unmarshaled JSON
 type NavigateResponse struct {
 	Data  course `json:"data"`
 	Error string `json:"error"`
 }
 
-// GeofenceResponse is the result struct contained unmarshaled JSON
+// GeofenceResponse is a result struct containing unmarshaled JSON
 type GeofenceResponse struct {
 	Data  []geofence `json:"data"`
 	Error string     `json:"error"`
@@ -247,7 +247,6 @@ func (a *API) SetLatLng(lat float64, lng float64) {
 
 // Private method to make the request and process the response
 func (a *API) makeRequest(endPoint string) ([]byte, error) {
-
 	// Custom client for timeouts
 	var netClient = &http.Client{
 		Timeout: time.Second * 10,

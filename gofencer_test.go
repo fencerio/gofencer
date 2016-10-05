@@ -207,7 +207,6 @@ func TestPositionStatus(t *testing.T) {
 }
 
 func TestSetAPIKey(t *testing.T) {
-
 	f := new(gofencer.API)
 	f.SetAPIKey("123456789")
 
@@ -230,11 +229,9 @@ func TestSetAPIKey(t *testing.T) {
 	if version.String() != "v1.0" {
 		t.Error("Version not correctly initialized")
 	}
-
 }
 
 func TestSetAccessKey(t *testing.T) {
-
 	f := new(gofencer.API)
 	f.SetAccessKey("123456789")
 
@@ -245,11 +242,9 @@ func TestSetAccessKey(t *testing.T) {
 	if accessKey.String() != "123456789" {
 		t.Error("Geofence Access Key not correctly set")
 	}
-
 }
 
 func TestSetVersion(t *testing.T) {
-
 	f := new(gofencer.API)
 	f.SetVersion("v1.1")
 
@@ -260,11 +255,9 @@ func TestSetVersion(t *testing.T) {
 	if version.String() != "v1.1" {
 		t.Error("Version was not correctly set")
 	}
-
 }
 
 func TestSetLat(t *testing.T) {
-
 	f := new(gofencer.API)
 	f.SetLat(53.12312321)
 
@@ -275,11 +268,9 @@ func TestSetLat(t *testing.T) {
 	if lat.Float() != 53.12312321 {
 		t.Error("Latitude was not correctly set")
 	}
-
 }
 
 func TestSetLng(t *testing.T) {
-
 	f := new(gofencer.API)
 	f.SetLng(-2.354545654)
 
@@ -290,11 +281,9 @@ func TestSetLng(t *testing.T) {
 	if lng.Float() != -2.354545654 {
 		t.Error("Longitude was not correctly set")
 	}
-
 }
 
 func TestSetLatLng(t *testing.T) {
-
 	f := new(gofencer.API)
 	f.SetLatLng(53.12312321, -2.354545654)
 
@@ -313,5 +302,4 @@ func TestSetLatLng(t *testing.T) {
 	if lng.Float() != -2.354545654 {
 		t.Error("Longitude was not correctly set in setLatLng")
 	}
-
 }
